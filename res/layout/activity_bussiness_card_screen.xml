@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/app_background" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_margin_left"
+        android:layout_marginRight="@dimen/activity_margin_right">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/save"
+            android:layout_alignRight="@+id/save"
+            android:layout_above="@+id/save" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/activity_margin_bussiness_card"
+                android:scaleType="fitXY" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/save"
+            android:text="@string/save_button"
+            android:layout_marginBottom="@dimen/activity_margin_bottom"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

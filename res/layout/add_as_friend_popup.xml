@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_background">
+
+            <RelativeLayout
+                android:id="@+id/relative_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/user_profile_pic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView2"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user_profile_pic" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_one"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView2"
+                    android:background="@drawable/circle_shape"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progressDrawable="@drawable/circular_progress_bar" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/user_profile_pic"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toEndOf="@+id/user_profile_pic"
+                    android:layout_toRightOf="@+id/user_profile_pic"
+                    android:text="Amelia"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/designation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_name"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@+id/user_profile_pic"
+                    android:layout_toRightOf="@+id/user_profile_pic"
+                    android:text="Android Developer"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/designation"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@+id/user_profile_pic"
+                    android:layout_toRightOf="@+id/user_profile_pic"
+                    android:text="Accelor tech pvt ltd."
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/divider_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/user_profile_pic"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/fragement_list_divider" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divider_one"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Hey there!! i am using ListYou"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/divider_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/status"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/fragement_list_divider" />
+
+                <Button
+                    android:id="@+id/retreive_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divider_two"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/retreive_button"
+                    android:text="@string/add_as_friend_button_text"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/xys"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/retreive_btn"
+                    android:text="TextView"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/cross_button_xy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/button_cross" />
+
+        <ImageView
+            android:id="@+id/cross_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

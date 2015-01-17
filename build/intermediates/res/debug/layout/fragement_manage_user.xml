@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupFragement">
+
+    <RelativeLayout
+        android:id="@+id/relative_top"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:background="#c69c6d">
+
+        <TextView
+            android:id="@+id/header_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/manage_user_header"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#242c3d" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/realtive_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/relative_top">
+
+
+            <EditText
+                android:id="@+id/search_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:cursorVisible="false"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/spinner_system_defined_group"
+                android:background="@drawable/search_bar" />
+
+            <Spinner
+                android:id="@+id/spinner_system_defined_group"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/cateogry"
+                android:layout_alignParentRight="true"
+                android:prompt="@string/group_prompt" />
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_two"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/realtive_group"
+        android:layout_above="@+id/relative_bottom"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/create_group_list_header" />
+
+        <ListView
+            android:id="@+id/lvExp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:cacheColorHint="#00000000">
+
+        </ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:background="#c69c6d">
+
+        <TextView
+            android:id="@+id/save_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/manage_user_move_to"
+            android:layout_centerInParent="true"
+            android:textColor="#e81600" />
+    </RelativeLayout>
+</RelativeLayout><!-- From: file:/D:/StudioWorkspace/AppListYou/res/layout/fragement_manage_user.xml -->

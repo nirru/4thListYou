@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+            <ImageView
+                android:id="@+id/footer_chat_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/chat_not_selected" />
+
+            <TextView
+                android:id="@+id/footer_chat_listing_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/footer_chat_list"
+                android:text="@string/footer_chat"
+                android:textColor="@color/white"
+                android:textSize="8dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/chat_count"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_toRightOf="@+id/relativeLayout1"
+            android:background="@drawable/round_tv"
+            android:gravity="center"
+            android:text="12"
+            android:layout_marginLeft="-12dp"
+            android:layout_marginTop="8dp"
+            android:textSize="7dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/D:/StudioWorkspace/AppListYou/res/layout/includer_chat_list.xml -->

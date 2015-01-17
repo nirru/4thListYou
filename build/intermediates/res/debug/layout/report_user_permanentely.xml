@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_background">
+
+            <RelativeLayout
+                android:id="@+id/relative_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/user_profile_pic"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:tag="1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/textView2"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user_profile_pic" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_one"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView2"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/circle_shape"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progressDrawable="@drawable/circular_progress_bar" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#e81600"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/fragement_report_dialog_header"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/user_profile_pic"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@+id/user_profile_pic"
+                    android:layout_toRightOf="@+id/user_profile_pic"
+                    android:text="Amelia"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/designation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_name"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="gone"
+                    android:layout_toEndOf="@+id/user_profile_pic"
+                    android:layout_toRightOf="@+id/user_profile_pic"
+                    android:text="Android Developer"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/designation"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@+id/user_profile_pic"
+                    android:layout_toRightOf="@+id/user_profile_pic"
+                    android:text="Accelor technology servicesfdfddfdf"
+                    android:textColor="@android:color/black" />
+
+
+
+
+                <TextView
+                    android:id="@+id/profile_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_profile_pic"
+                    android:text="@string/fragement_report_reason"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:id="@+id/type_your_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_below="@+id/profile_status"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left|top"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@android:color/white"
+                    android:textColor="#242c3d" />
+
+                <TextView
+                    android:id="@+id/save_status"
+                    android:layout_width="175dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/type_your_status"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/round_corner_edittext_more"
+                    android:text="@string/fragement_report_settings_submit"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/xys"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/save_status"
+                    android:text="TextView"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/cross_button_xy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/button_cross" />
+
+        <ImageView
+            android:id="@+id/cross_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/D:/StudioWorkspace/AppListYou/res/layout/report_user_permanentely.xml -->

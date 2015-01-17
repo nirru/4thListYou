@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_background">
+
+            <LinearLayout
+                android:id="@+id/linear_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/invite_friend_by"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/retreive_button"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="@string/invite_friend_by"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/forgotpasswordtextsize" />
+
+
+                <TextView
+                    android:id="@+id/sms"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/invite_friend_by_sms"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/divider_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/top"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/fragement_list_divider" />
+
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/invite_friend_by_email"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/divider_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/top"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/fragement_list_divider" />
+
+                <TextView
+                    android:id="@+id/share"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/invite_friend_by_share"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/black" />
+
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/cross_button_xy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/button_cross" />
+
+        <ImageView
+            android:id="@+id/cross_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/D:/StudioWorkspace/AppListYou/res/layout/invite_friend_popup.xml -->

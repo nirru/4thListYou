@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    tools:context=".AddListFragement">
+
+    <LinearLayout
+        android:id="@+id/linear_one"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <RelativeLayout
+                android:id="@+id/relative_capture_qr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/add_list_box">
+
+                <ImageView
+                    android:id="@+id/capture_qr_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/capture_qr_now" />
+
+                <TextView
+                    android:id="@+id/capture_qr_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/capture_qr_image_view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="@string/addlist_capture_qr_now"
+                    android:textColor="#f6b975"
+                    android:textSize="8dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <RelativeLayout
+                android:id="@+id/relative_invite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/add_list_box">
+
+                <ImageView
+                    android:id="@+id/invite_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/message" />
+
+                <TextView
+                    android:id="@+id/invite_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/invite_image_view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="@string/addlist_invite"
+                    android:textColor="#f6b975"
+                    android:textSize="8dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <RelativeLayout
+                android:id="@+id/relative_search_by_listyou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/add_list_box">
+
+                <ImageView
+                    android:id="@+id/search_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/search_by_listyou" />
+
+                <TextView
+                    android:id="@+id/search_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/search_image_view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="@string/addlist_search"
+                    android:textColor="#f6b975"
+                    android:textSize="8dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <RelativeLayout
+                android:id="@+id/relative_my_bussiness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/add_list_box">
+
+                <ImageView
+                    android:id="@+id/mybussiness_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/my_business_card" />
+
+                <TextView
+                    android:id="@+id/mybussiness_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mybussiness_image_view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/addlist_mycard"
+                    android:textColor="#f6b975"
+                    android:textSize="8dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_one"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/addlist_search_people" />
+
+    <RelativeLayout
+        android:id="@+id/relative_one"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/search_edit_box"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:background="@drawable/add_list_search_edit_box"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search_icon_add_list" />
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" />
+
+
+    </RelativeLayout>
+
+    <com.customclasses.AnimatedExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_one"
+        android:layout_marginTop="15dp"
+        android:cacheColorHint="#00000000">
+
+    </com.customclasses.AnimatedExpandableListView>
+</RelativeLayout>
+<!-- From: file:/D:/StudioWorkspace/AppListYou/res/layout/fragement_add_list.xml -->

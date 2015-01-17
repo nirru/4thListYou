@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="list_you_register_background">#c69c6d</color>
+    <color name="list_you_header_background">#242c3d</color>
+    <color name="app_background">#f2f2f2</color>
+    <color name="edit_profile_line_color">#bfbfbf</color>
+    <color name="edit_profile_text_color">#5f5e5e</color>
+    <color name="company_logo_text_color">#1d1f22</color>
+    <color name="forgot_password_color">#151c29</color>
+    <color name="please_enter_your_email">#434547</color>
+    <color name="edit_profile_all_edit_text_color">#888888</color>
+    <color name="company_logo_text_view_text_color">#4e4c4c</color>
+    <color name="congratulation_color">#242c3d</color>
+    <color name="drawer_background">#c69c6c</color>
+    <color name="white">#ffffff</color>
+    <color name="line_background_two">#edcda7</color>
+    <color name="line_background_one">#906d45</color>
+    <color name="drawer_text_color">#44414a</color>
+    <color name="fragement_list_divider">#bfbfbf</color>
+    <color name="qr_color">#242c3d</color>
+    <color name="scan_border_line">#91db51</color>
+    <color name="scan_footer">#323c52</color>
+    <color name="gallery_button_color">#646f88</color>
+    <color name="green">#76EE00</color>
+
+</resources>

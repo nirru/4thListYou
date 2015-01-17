@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/app_background">
+
+            <LinearLayout
+                android:id="@+id/linear_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/fragement_report_settings_header"
+                    android:textSize="@dimen/forgotpasswordtextsize"
+                    android:textColor="@color/congratulation_color" />
+
+                <TextView
+                    android:id="@+id/lets_start_label_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/listyou_round_corner_edittext"
+                    android:text="@string/fragement_report_settings_report_user"
+                    android:textColor="@color/please_enter_your_email" />
+
+                <TextView
+                    android:id="@+id/lets_start_label_two"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/listyou_round_corner_edittext"
+                    android:text="@string/fragement_report_settings_delete_user"
+                    android:textColor="@color/please_enter_your_email" />
+
+                <TextView
+                    android:id="@+id/lets_start_label_three"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/listyou_round_corner_edittext"
+                    android:text="@string/fragement_report_settings_manage_group"
+                    android:textColor="@color/please_enter_your_email" />
+
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/cross_button_xy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/button_cross" />
+
+        <ImageView
+            android:id="@+id/cross_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/D:/StudioWorkspace/AppListYou/res/layout/report_user_popup.xml -->

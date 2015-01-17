@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    tools:context=".ContactListingfragement">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/user_profile_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/designation"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_profile_name"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/company"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/designation"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/company"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/setting" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/company"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_toLeftOf="@+id/imageView5"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/button" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/divider_one"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/top"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@color/fragement_list_divider" />
+
+    <LinearLayout
+        android:id="@+id/linear_one"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider_one"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/friend_list"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#242c3d"
+            android:gravity="center"
+            android:text="@string/friend_list"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/all_contact_list"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#c3c3c3"
+            android:gravity="center"
+            android:layout_marginLeft="-1dp"
+            android:text="@string/all_contact_list"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/list_you_friends_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_one"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/linear_two"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <EditText
+                android:id="@+id/search_action"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:singleLine="true"
+                android:cursorVisible="false"
+                android:background="@drawable/search_bar" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=""
+                android:visibility="invisible" />
+
+
+
+                <Spinner
+                    android:id="@+id/spinner_system_defined_group"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:layout_marginTop="-3dp"
+                    android:background="@drawable/cateogry"
+                    android:visibility="visible"
+                    android:prompt="@string/group_prompt" />
+
+
+
+
+        </LinearLayout>
+
+        <com.customclasses.AnimatedExpandableListView
+            android:id="@+id/lvExp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linear_two"
+            android:layout_marginTop="15dp"
+            android:visibility="visible"
+            android:cacheColorHint="#00000000">
+
+        </com.customclasses.AnimatedExpandableListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/all_contact_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_one"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/relative_three"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/search_action_for_all_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:cursorVisible="false"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/search_bar" />
+
+            <Button
+                android:id="@+id/click_search_button"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent" />
+
+            <LinearLayout
+                android:id="@+id/linear_all_contact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/search_action_for_all_contact"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/create_group_list_header" />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:id="@+id/all_contact_list_view" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

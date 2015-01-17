@@ -1,0 +1,70 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+
+        -->
+
+
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+    </style>
+
+    <style name="ProgressBarStyle" parent="@android:style/Widget.Holo.ProgressBar.Horizontal" />
+
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:dropDownWidth">50dp</item>
+        <item name="android:showDividers">none</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:dropDownHeight">45dp</item>
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:dropDownSelector">@android:color/white</item>
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+
+    </style>
+
+    <style name="mySwitchStyle">
+        <item name="track">@drawable/rounded_rect</item>
+        <item name="thumb">@drawable/background_fenced</item>
+        <item name="switchTextAppearanceAttrib">@style/mySwitchTextAppearance</item>
+        <item name="textOn">ON</item>
+        <item name="textOff">OFF</item>
+        <item name="pushStyle">false</item>
+        <item name="textOnThumb">true</item>
+        <item name="thumbExtraMovement">0dp</item>
+        <item name="thumbTextPadding">6dp</item>
+        <item name="trackTextPadding">6dp</item>
+        <item name="switchMinWidth">69dp</item>
+        <item name="switchMinHeight">36dp</item>
+        <item name="switchPadding">6dp</item>
+    </style>
+
+    <style name="mySwitchTextAppearance">
+        <item name="textColor">#FFeeFFee</item>
+        <item name="textColorHighlight">#FF000000</item>
+        <item name="textColorHint">#FF000000</item>
+        <item name="textColorLink">#FF000000</item>
+        <item name="textSize">12sp</item>
+        <item name="textStyle">normal</item>
+    </style>
+
+</resources>

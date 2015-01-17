@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/top_bar">
+
+        <LinearLayout
+            android:id="@+id/linear_footer_parent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center|top"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:id="@+id/footer_linear_one"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|top"
+                android:orientation="vertical">
+
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/includer_contact_list" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/footer_linear_two"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|top"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/includer_chat_list" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/footer_linear_three"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|top"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/includer_add_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/footer_linear_four"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|top"
+                android:orientation="vertical">
+
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/includer_notification_list" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/moveline"
+            android:layout_width="55dp"
+            android:layout_height="3dp"
+            android:visibility="visible"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@+id/linear_footer_parent"
+            android:background="#e81600" />
+    </RelativeLayout>
+</LinearLayout><!-- From: file:/D:/StudioWorkspace/AppListYou/res/layout/footer.xml -->

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dip"
+    android:background="@color/app_background">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user_profile_pic" />
+
+    <TextView
+        android:id="@+id/user_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/imageView6"
+        android:layout_toRightOf="@+id/imageView6"
+        android:text="New Text"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_profile_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/imageView6"
+        android:layout_toLeftOf="@+id/add_friend_btn"
+        android:layout_toRightOf="@+id/imageView6"
+        android:text="Accelor Tech Pvt Ltd."
+        android:textColor="@android:color/black" />
+
+
+    <ImageView
+        android:id="@+id/add_friend_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/add_friend_box" />
+
+
+    <TextView
+        android:id="@+id/add_friend_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignTop="@+id/add_friend_btn"
+        android:layout_marginTop="22dp"
+        android:text="Add"
+        android:textColor="@android:color/white"
+        android:visibility="visible" />
+
+</RelativeLayout>
