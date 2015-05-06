@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/center_text"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:id="@+id/parent_sender_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/center_text"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentLeft="true">
+
+          <ImageView
+              android:id="@+id/sender_image"
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              android:layout_alignParentLeft="true"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="5dp"
+              android:scaleType="fitXY"
+              android:src="@drawable/user_profile_pic"/>
+
+        <RelativeLayout
+            android:id="@+id/sender_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/sender_image"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/sender_bubble">
+
+            <TextView
+                android:id="@+id/sender_chat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@android:color/white"
+                android:gravity="left|center"
+                android:textSize="12dp"
+                android:text="Hello there I am your friends"/>
+
+
+           <TextView
+               android:id="@+id/sender_chat_text_time"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_below="@+id/sender_chat_text"
+               android:text="12:30 PM"
+               android:layout_marginTop="2dp"
+               android:textSize="9dp"
+               android:textColor="@android:color/white"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/receiver_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/center_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/receiver_bubble">
+
+            <TextView
+                android:id="@+id/receiver_chat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@android:color/black"
+                android:gravity="left|center"
+                android:textSize="12dp"
+                android:text="Hello there I am your friends now come and join me you will enjoy the party"/>
+
+
+            <TextView
+                android:id="@+id/receiver_chat_text_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/receiver_chat_text"
+                android:text="12:30 PM"
+                android:layout_marginTop="2dp"
+                android:textSize="9dp"
+                android:textColor="@android:color/black"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

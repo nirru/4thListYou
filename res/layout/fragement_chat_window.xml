@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_below="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:visibility="visible"
+        android:background="#242c3d">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_arrow"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/white_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_detail"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/contact_detail"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_arrow"
+            android:layout_toEndOf="@+id/back_arrow" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/action_settings"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/white_setting_icon" />
+    </RelativeLayout>
+
+         <TextView
+             android:id="@+id/chat_date"
+             android:layout_width="wrap_content"
+             android:layout_height="35dp"
+             android:background="@drawable/chat_date_rect"
+             android:gravity="center"
+             android:paddingLeft="5dp"
+             android:paddingRight="5dp"
+             android:layout_marginTop="20dp"
+             android:layout_gravity="center"
+             android:textSize="11dp"
+             android:text="29th may 2014"/>
+
+    <ListView
+        android:id="@+id/listMessages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:layout_marginTop="10dp"
+        android:cacheColorHint="#00000000"
+        android:scrollbars="horizontal" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="#242c3d">
+        <ImageView
+            android:id="@+id/add_attachement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_attachement"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/emicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/emicon"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/add_attachement"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:id="@+id/sendText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoText="false"
+            android:capitalize="none"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/emicon"
+            android:scrollHorizontally="true"
+            android:maxHeight="75dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/send"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/chat_edit_box"/>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:textColor="#0c111c"
+            android:text="Send"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:background="#ffc000"/>
+
+
+        </RelativeLayout>
+
+</LinearLayout>
